@@ -1,31 +1,32 @@
-const Calculator = require('../src/calculator/Calculator.js');
+const Calculator = require('../calculator/Calculator.js');
 
-describe('Calculator', () => {
-    test('add funziona correttamente', () => {
+describe('Calculator - Test Base', () => {
+
+    test('Addizione funziona', () => {
         const calc = new Calculator(10);
         calc.add(5);
         expect(calc.getValue()).toBe(15);
     });
 
-    test('subtract funziona correttamente', () => {
+    test('Sottrazione funziona', () => {
         const calc = new Calculator(10);
         calc.subtract(3);
         expect(calc.getValue()).toBe(7);
     });
 
-    test('multiply funziona correttamente', () => {
+    test('Moltiplicazione funziona', () => {
         const calc = new Calculator(5);
         calc.multiply(3);
         expect(calc.getValue()).toBe(15);
     });
 
-    test('divide funziona correttamente', () => {
+    test('Divisione funziona', () => {
         const calc = new Calculator(20);
         calc.divide(4);
         expect(calc.getValue()).toBe(5);
     });
 
-    test('divide per zero lancia errore', () => {
+    test('Divisione per zero lancia errore', () => {
         const calc = new Calculator(10);
         expect(() => calc.divide(0)).toThrow('Impossibile dividere per zero');
     });

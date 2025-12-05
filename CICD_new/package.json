@@ -1,7 +1,7 @@
 {
     "name": "calculator-ci",
     "version": "1.0.0",
-    "description": "Esempio testing",
+    "description": "Calcolatrice con CI/CD Testing",
     "scripts": {
         "test": "jest",
         "start": "open index.html"
