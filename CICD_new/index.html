@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .calculator {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .display {
+            background: #f8f9fa;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: right;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2d3748;
+            min-height: 80px;
+            word-break: break-all;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: #f8f9fa;
+            color: #2d3748;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .operator {
+            background: #667eea;
+            color: white;
+        }
+
+        .operator:hover {
+            background: #5568d3;
+        }
+
+        .equals {
+            background: #48bb78;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .equals:hover {
+            background: #38a169;
+        }
+
+        .clear {
+            background: #f56565;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .clear:hover {
+            background: #e53e3e;
+        }
+
+        h1 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>🧮 Calcolatrice</h1>
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button class="operator" onclick="setOperation('÷')">÷</button>
+
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button class="operator" onclick="setOperation('×')">×</button>
+
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button class="operator" onclick="setOperation('-')">-</button>
+
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button class="equals" onclick="calculate()">=</button>
+            <button class="operator" onclick="setOperation('+')">+</button>
+
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="operator" onclick="setOperation('^')">xª</button>
+            <button class="operator" onclick="squareRoot()">√</button>
+        </div>
+    </div>
+
+    <script src="src/calculator/Calculator.js"></script>
+    <script>
+        const calc = new Calculator();
+        let currentInput = '';
+        let lastOperation = null;
+
+        function updateDisplay() {
+            const display = document.getElementById('display');
+            display.textContent = currentInput || calc.getValue();
+        }
+
+        function appendNumber(num) {
+            currentInput += num;
+            updateDisplay();
+        }
+
+        function setOperation(op) {
+            if (currentInput) {
+                const value = parseFloat(currentInput);
+
+                if (lastOperation) {
+                    calculate();
+                } else {
+                    calc.setValue(value);
+                }
+                currentInput = '';
+            }
+
+            lastOperation = op;
+            updateDisplay();
+        }
+
+        function calculate() {
+            if (currentInput && lastOperation) {
+                const value = parseFloat(currentInput);
+
+                try {
+                    switch (lastOperation) {
+                        case '+':
+                            calc.add(value);
+                            break;
+                        case '-':
+                            calc.subtract(value);
+                            break;
+                        case '×':
+                            calc.multiply(value);
+                            break;
+                        case '÷':
+                            calc.divide(value);
+                            break;
+                        case '^':
+                            calc.power(value);
+                            break;
+                    }
+                    currentInput = '';
+                    lastOperation = null;
+                } catch (error) {
+                    alert(error.message);
+                    clearDisplay();
+                }
+            }
+            updateDisplay();
+        }
+
+        function squareRoot() {
+            if (currentInput) {
+                calc.setValue(parseFloat(currentInput));
+                currentInput = '';
+            }
+            try {
+                calc.sqrt();
+                updateDisplay();
+            } catch (error) {
+                alert(error.message);
+                clearDisplay();
+            }
+        }
+
+        function clearDisplay() {
+            calc.clear();
+            currentInput = '';
+            lastOperation = null;
+            updateDisplay();
+        }
+
+        // Inizializza il display
+        updateDisplay();
+    </script>
+</body>
+
+</html>

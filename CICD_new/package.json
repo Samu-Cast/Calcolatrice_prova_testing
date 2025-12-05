@@ -1,0 +1,12 @@
+{
+    "name": "calculator-ci",
+    "version": "1.0.0",
+    "description": "Esempio testing",
+    "scripts": {
+        "test": "jest",
+        "start": "open index.html"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}
