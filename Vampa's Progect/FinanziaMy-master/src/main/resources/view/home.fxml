@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="anchor" stylesheets="@grafica.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.cdvd.controller.HomeController">
+   <children>
+      <MenuBar fx:id="menu" prefHeight="26.0" prefWidth="600.0" styleClass="menu-bar" stylesheets="@grafica.css">
+         <menus>
+            <Menu mnemonicParsing="false" styleClass="menu" text="Gestione account">
+               <items>
+                  <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#handleLogoutClick" styleClass="menu-item" text="Logout" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" styleClass="menu" text="Transazioni">
+               <items>
+                  <MenuItem fx:id="nuovaTransazione" mnemonicParsing="false" onAction="#nuovaTransazioneOnAction" styleClass="menu-item" text="Nuova transazione" />
+                  <MenuItem fx:id="eliminaTransazione" mnemonicParsing="false" onAction="#eliminaTransazione" styleClass="menu-item" text="Elimina transazione" />
+                  <MenuItem fx:id="modificaTransazione" mnemonicParsing="false" onAction="#modificaTransazione" styleClass="menu-item" text="Modifica transazione" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" styleClass="menu" text="Categoria">
+               <items>
+                  <MenuItem fx:id="aggiungiCategoria" mnemonicParsing="false" onAction="#aggiuntaCategoriaOnAction" styleClass="menu-item" text="Aggiungi Categoria" />
+                  <MenuItem fx:id="eliminaCategoria" mnemonicParsing="false" onAction="#eliminaCategoriaOnAction" styleClass="menu-item" text="Elimina Categoria" />
+
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" styleClass="menu" text="Statistiche">
+               <items>
+                  <MenuItem fx:id="creaReport" mnemonicParsing="false" onAction="#reportButtonOnAction" styleClass="menu-item" text="Crea Report" />
+               </items>
+            </Menu>
+            <Menu fx:id="info" mnemonicParsing="false" onAction="#informazioniOnAction" styleClass="menu" text="Informazioni">
+               <items>
+                  <MenuItem fx:id="repository" mnemonicParsing="false" onAction="#informazioniOnAction" styleClass="menu-item" text="Repository GitHub" />
+               </items></Menu>
+
+         </menus>
+      </MenuBar>
+      <Label fx:id="saldo" alignment="CENTER" contentDisplay="CENTER" layoutX="158.0" layoutY="35.0" prefHeight="56.0" prefWidth="284.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="44.0" layoutY="100.0" prefHeight="232.0" prefWidth="526.0">
+         <children>
+            <TableView fx:id="tabellaTransazioni" prefHeight="231.0" prefWidth="526.0">
+              <columns>
+                 <TableColumn fx:id="categoriaColumn" prefWidth="75.0" text="Categoria" />
+                 <TableColumn fx:id="importoColumn" prefWidth="75.0" text="Importo" />
+                 <TableColumn fx:id="dataColumn" prefWidth="75.0" text="Data" />
+                 <TableColumn fx:id="causaleColumn" prefWidth="298.4" text="Causale" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="34.0" fitWidth="156.0" layoutX="430.0" layoutY="352.0">
+         <image>
+            <Image url="@../img/logoAuth.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

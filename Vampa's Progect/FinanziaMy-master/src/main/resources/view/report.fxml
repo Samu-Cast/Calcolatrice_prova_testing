@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.cdvd.controller.ReportController">
+   <children>
+      <Label layoutX="120.0" layoutY="30.0" prefHeight="36.0" prefWidth="68.0" text="REPORT" textAlignment="CENTER" textFill="#bbe944">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datainizioPicker" layoutX="66.0" layoutY="174.0" promptText="data inizio" />
+      <DatePicker fx:id="datafinePicker" layoutX="66.0" layoutY="239.0" promptText="data fine" />
+      <Label layoutX="122.0" layoutY="148.0" text="data inizio" />
+      <Label layoutX="126.0" layoutY="212.0" text="data fine" />
+      <Label layoutX="121.0" layoutY="84.0" text="categoria">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+
+      <ChoiceBox fx:id="categoryChoiceBox" layoutX="79.0" layoutY="112.0" prefWidth="150.0" styleClass="button" stylesheets="@grafica.css" AnchorPane.rightAnchor="70.6" />
+      <Button fx:id="annullaButton" layoutX="160.0" layoutY="297.0" mnemonicParsing="false" onAction="#annullaButtonOnAction" styleClass="button" stylesheets="@grafica.css" text="Annulla" />
+      <Button fx:id="creaButton" layoutX="100.0" layoutY="297.0" mnemonicParsing="false" onAction="#handleCreatePDF" styleClass="button" stylesheets="@grafica.css" text="Crea" />
+      <Label fx:id="reportMessageLabel" layoutX="62.0" layoutY="66.0" prefHeight="18.0" prefWidth="175.0" textAlignment="CENTER" />
+
+   </children>
+</AnchorPane>

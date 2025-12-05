@@ -1,0 +1,117 @@
+ID,Ruolo,User Story
+A01,Appassionato,Come appassionato voglio poter creare un profilo personale così da condividere le mie esperienze con la community.
+A02,Appassionato,Come appassionato voglio poter modificare le informazioni del mio profilo così da mantenerle sempre aggiornate.
+A03,Appassionato,Como appassionato voglio poter seguire altri utenti così da rimanere aggiornato sui loro contenuti.
+A04,Appassionato,Como appassionato voglio poter visualizzare una home con i post degli utenti che seguo così da avere un flusso aggiornato di informazioni.
+A05,Appassionato,Como appassionato voglio poter inviare e ricevere richieste di amicizia così da ampliare la mia rete di contatti.
+A06,Appassionato,Como appassionato voglio poter gestire le mie impostazioni di privacy così da controllare la visibilità delle mie attività.
+A07,Appassionato,Como appassionato voglio poter pubblicare recensioni su caffè e miscele così da condividere le mie opinioni con gli altri utenti.
+A08,Appassionato,Como appassionato voglio poter valutare un prodotto con un punteggio così da contribuire alla media delle recensioni.
+A09,Appassionato,Come appassionato voglio poter aggiungere immagini o video alle recensioni così da rendere i miei contenuti più completi.
+A10,Appassionato,Come appassionato voglio poter commentare i post di altri utenti così da partecipare attivamente alla discussione.
+A11,Appassionato,Como appassionato voglio poter mettere mi piace ai contenuti così da esprimere apprezzamento in modo rapido.
+A12,Appassionato,Come appassionato voglio poter segnalare contenuti inappropriati così da contribuire alla qualità della community.
+A13,Appassionato,Como appassionato voglio poter leggere recensioni di altri utenti su un prodotto così da orientare le mie scelte.
+A14,Appassionato,Como appassionato voglio poter filtrare le recensioni per valutazione o data così da trovare più facilmente quelle rilevanti.
+A15,Appassionato,Como appassionato voglio poter creare le mie collezioni di prodotti così da tenere traccia delle miscele provate o da provare.
+A16,Appassionato,Como appassionato voglio poter visualizzare le collezioni di altri utenti così da scoprire nuovi prodotti interessanti.
+A17,Appassionato,Como appassionato voglio poter cercare collezioni per categoria o parola chiave così da esplorare meglio i contenuti.
+A18,Appassionato,Como appassionato voglio poter confrontare due o più miscele così da scegliere quella più adatta ai miei gusti.
+A19,Appassionato,Como appassionato voglio poter salvare prodotti o guide tra i preferiti così da consultarli facilmente in futuro.
+A20,Appassionato,Como appassionato voglio poter accedere alla sezione Scopri così da restare aggiornato sulle novità.
+A21,Appassionato,Como appassionato voglio poter leggere guide e articoli tecnici così da migliorare le mie capacità di degustazione.
+A22,Appassionato,Como appassionato voglio poter partecipare a sfide o eventi online così da vivere esperienze collettive.
+A23,Appassionato,Como appassionato voglio poter visualizzare il calendario degli eventi futuri così da pianificare la mia partecipazione.
+A24,Appassionato,Como appassionato voglio poter ricevere notifiche sugli eventi o sui post dei miei seguiti così da restare aggiornato.
+A25,Appassionato,Como appassionato voglio poter impostare preferenze sulle notifiche così da ricevere solo aggiornamenti rilevanti.
+A26,Appassionato,Como appassionato voglio poter contattare il supporto tramite chat o modulo così da risolvere problemi rapidamente.
+
+B01,Barista,Como barista voglio poter creare un profilo del mio bar così da presentare la mia attività alla community.
+B02,Barista,Como barista voglio poter associare al profilo del bar i baristi che vi lavorano così da mostrare il team.
+B03,Barista,Como barista voglio poter modificare le informazioni del profilo del bar così da mantenerle aggiornate.
+B04,Barista,Como barista voglio poter visualizzare in una home le novità dei miei seguiti così da restare aggiornato.
+B05,Barista,Como barista voglio poter seguire altri utenti così da condividere esperienze professionali.
+B06,Barista,Como barista voglio poter visualizzare lo storico delle recensioni così da monitorare la mia attività.
+B07,Barista,Como barista voglio poter gestire impostazioni e preferenze così da personalizzare l’esperienza.
+B08,Barista,Como barista voglio poter creare collezioni di prodotti del bar così da condividere le miscele che preferisco.
+B09,Barista,Como barista voglio poter visualizzare collezioni di altri utenti così da trarre ispirazione.
+B10,Barista,Como barista voglio poter cercare collezioni per categoria così da esplorare prodotti.
+B11,Barista,Como barista voglio poter confrontare miscele così da scegliere le migliori.
+B12,Barista,Como barista voglio poter aggiungere recensioni ai prodotti così da contribuire alla valutazione collettiva.
+B13,Barista,Como barista voglio poter inserire dati tecnici sulla preparazione così da fornire informazioni utili.
+B14,Barista,Como barista voglio poter caricare foto o video delle estrazioni così da condividere risultati.
+B15,Barista,Como barista voglio poter partecipare a sfide o eventi professionali così da mettermi alla prova.
+B16,Barista,Como barista voglio poter creare eventi o workshop così da coinvolgere la community.
+B17,Barista,Como barista voglio poter visualizzare il calendario degli eventi così da pianificare partecipazione.
+B18,Barista,Como barista voglio poter ricevere notifiche sugli eventi partner così da non perderli.
+B19,Barista,Como barista voglio poter condividere guide o articoli così da contribuire alla crescita della community.
+B20,Barista,Como barista voglio poter ricevere feedback dai partecipanti così da migliorare gli eventi futuri.
+B21,Barista,Como barista voglio poter commentare contenuti così da scambiare opinioni.
+B22,Barista,Como barista voglio poter rispondere ai commenti così da mantenere un dialogo aperto.
+B23,Barista,Como barista voglio poter inviare messaggi diretti così da organizzare collaborazioni.
+B24,Barista,Como barista voglio poter visualizzare i post più apprezzati così da individuare trend del momento.
+B25,Barista,Como barista voglio poter visualizzare statistiche sul profilo così da capire l’interesse generato.
+B26,Barista,Como barista voglio poter promuovere il mio bar con post sponsorizzati così da raggiungere più utenti.
+B27,Barista,Como barista voglio poter configurare notifiche personalizzate così da essere informato solo del rilevante.
+
+T01,Torrefazione,Como torrefazione voglio poter creare un profilo aziendale così da presentare il mio marchio.
+T02,Torrefazione,Como torrefazione voglio poter modificare le informazioni del profilo così da mantenerle aggiornate.
+T03,Torrefazione,Como torrefazione voglio poter visualizzare tutte le informazioni aziendali così da gestire lo storico.
+T04,Torrefazione,Como torrefazione voglio poter aggiungere membri dello staff così da mostrare il team.
+T05,Torrefazione,Como torrefazione voglio poter visualizzare una home con i contenuti dei seguiti così da restare aggiornata.
+T06,Torrefazione,Como torrefazione voglio poter configurare visibilità del profilo così da controllare chi visualizza.
+T07,Torrefazione,Como torrefazione voglio poter creare collezioni di prodotti così da promuovere le creazioni.
+T08,Torrefazione,Como torrefazione voglio poter visualizzare collezioni di altri produttori così da confrontare strategie.
+T09,Torrefazione,Como torrefazione voglio poter cercare prodotti specifici così da analizzare il mercato.
+T10,Torrefazione,Como torrefazione voglio poter aggiungere descrizioni dettagliate ai prodotti così da comunicare provenienza e aroma.
+T11,Torrefazione,Como torrefazione voglio poter caricare foto o video dei processi così da mostrare la qualità del lavoro.
+T12,Torrefazione,Como torrefazione voglio poter taggare baristi che usano i miei prodotti così da creare connessioni.
+T13,Torrefazione,Como torrefazione voglio poter ricevere recensioni dagli utenti così da ottenere feedback utili.
+T14,Torrefazione,Como torrefazione voglio poter rispondere alle recensioni così da instaurare dialogo.
+T15,Torrefazione,Como torrefazione voglio poter creare post promozionali così da aumentare visibilità.
+T16,Torrefazione,Como torrefazione voglio poter organizzare eventi o degustazioni virtuali così da coinvolgere utenti.
+T17,Torrefazione,Como torrefazione voglio poter gestire calendario eventi così da pianificare attività.
+T18,Torrefazione,Como torrefazione voglio poter pubblicare guide tecniche così da condividere conoscenza.
+T19,Torrefazione,Como torrefazione voglio poter creare campagne promozionali così da attrarre nuovi utenti.
+T20,Torrefazione,Como torrefazione voglio poter visualizzare statistiche su post e campagne così da valutarne l’efficacia.
+T21,Torrefazione,Como torrefazione voglio poter seguire altri utenti così da ampliare la rete professionale.
+T22,Torrefazione,Como torrefazione voglio poter interagire con post degli utenti così da costruire relazioni.
+T23,Torrefazione,Como torrefazione voglio poter inviare messaggi diretti così da comunicare offerte.
+T24,Torrefazione,Como torrefazione voglio poter essere seguita da utenti così da rafforzare la visibilità del brand.
+T25,Torrefazione,Como torrefazione voglio poter visualizzare trend di consumo così da orientare produzione.
+T26,Torrefazione,Como torrefazione voglio poter ricevere notifiche sulle interazioni così da rispondere tempestivamente.
+T27,Torrefazione,Como torrefazione voglio poter accedere a una dashboard centralizzata così da gestire attività.
+T28,Torrefazione,Como torrefazione voglio poter esportare dati così da analizzarli approfonditamente.
+T29,Torrefazione,Como torrefazione voglio poter gestire permessi del team così da distribuire i ruoli.
+T30,Torrefazione,Como torrefazione voglio poter usare la piattaforma da vari dispositivi così da gestire il lavoro ovunque.
+
+M01,Moderatore,Como moderatore voglio poter visualizzare un elenco di utenti così da monitorare la community.
+M02,Moderatore,Como moderatore voglio poter filtrare utenti per ruolo così da gestire meglio le segnalazioni.
+M03,Moderatore,Como moderatore voglio poter sospendere temporaneamente un account così da mantenere il rispetto delle regole.
+M04,Moderatore,Como moderatore voglio poter bannare utenti così da garantire la sicurezza della piattaforma.
+M05,Moderatore,Como moderatore voglio poter inviare avvisi così da prevenire comportamenti scorretti.
+M06,Moderatore,Como moderatore voglio poter rimuovere contenuti offensivi così da mantenere la qualità del portale.
+M07,Moderatore,Como moderatore voglio poter revisionare post segnalati così da valutare interventi.
+M08,Moderatore,Como moderatore voglio poter visualizzare registro delle segnalazioni così da tracciarne la gestione.
+M09,Moderatore,Como moderatore voglio poter assegnare priorità alle segnalazioni così da intervenire tempestivamente.
+M10,Moderatore,Como moderatore voglio poter esaminare contenuti sospetti così da rilevare spam o abusi.
+M11,Moderatore,Como moderatore voglio poter oscurare contenuti così da prevenire diffusione non conforme.
+M12,Moderatore,Como moderatore voglio poter ripristinare contenuti rimossi così da tutelare utenti corretti.
+M13,Moderatore,Como moderatore voglio monitorare frequenza segnalazioni così da identificare abusi.
+M14,Moderatore,Como moderatore voglio poter approvare contenuti verificati così da indicarne l’affidabilità.
+M15,Moderatore,Como moderatore voglio poter rispondere alle segnalazioni così da garantire trasparenza.
+M16,Moderatore,Como moderatore voglio poter inviare comunicazioni ufficiali così da informare utenti.
+M17,Moderatore,Como moderatore voglio poter partecipare ai forum dello staff così da discutere decisioni.
+M18,Moderatore,Como moderatore voglio poter accedere a una chat interna così da coordinare azioni.
+M19,Moderatore,Como moderatore voglio poter segnalare problemi tecnici così da migliorare la piattaforma.
+M20,Moderatore,Como moderatore voglio notifiche sulle segnalazioni assegnate così da non tralasciare casi.
+M21,Moderatore,Como moderatore voglio consultare statistiche della community così da monitorare l’andamento.
+M22,Moderatore,Como moderatore voglio visualizzare segnalazioni per categoria così da capire aree problematiche.
+M23,Moderatore,Como moderatore voglio poter scaricare report così da riferire al Product Owner.
+M24,Moderatore,Como moderatore voglio monitorare tempi medi di risposta così da ottimizzare la gestione.
+M25,Moderatore,Como moderatore voglio impostare filtri automatici così da bloccare contenuti inappropriati.
+M26,Moderatore,Como moderatore voglio verificare accettazione termini di utilizzo così da assicurare rispetto policy.
+M27,Moderatore,Como moderatore voglio controllare eventi sospetti così da rilevare bot o attività anomale.
+M28,Moderatore,Como moderatore voglio gestire livelli di autorizzazione così da distribuire responsabilità.
+M29,Moderatore,Como moderatore voglio archiviare segnalazioni risolte così da mantenere ordine.
+M30,Moderatore,Como moderatore voglio accedere a un pannello sicuro così da operare in modo protetto.

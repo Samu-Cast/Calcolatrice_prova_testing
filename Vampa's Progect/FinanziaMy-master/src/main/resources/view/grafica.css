@@ -1,0 +1,56 @@
+.anchor {
+    /*-fx-background-image:url('\s3.png');*/
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left top, center;
+}
+.button {
+    -fx-background-color: #d8ebc2;
+    -fx-text-fill: BLACK;  /* Colore del testo */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: transparent; /* Default: nessun bordo visibile */
+    -fx-border-width: 2px;
+}
+
+.button:hover {
+    -fx-background-color: #bbe944;
+}
+
+
+/* Quando il pulsante è selezionato (focus tramite Tab o click) */
+.button:focused {
+    -fx-border-color: darkgreen; /* Bordino verde scuro */
+}
+
+.menu-item {
+    -fx-background-color: #d8ebc2; /* Colore di sfondo */
+}
+.menu-item:focused {
+    -fx-background-color: #bbe944; /* Colore di sfondo quando un MenuItem è selezionato */
+}
+/* Modifica il colore di hover dei MenuItem */
+.menu-item:hover {
+    -fx-background-color: #bbe944; /* Colore di sfondo quando il mouse è sopra */
+    -fx-text-fill: black; /* Colore del testo quando il mouse è sopra */
+}
+.menu-bar {
+    -fx-background-color: #d8ebc2; /* Colore di sfondo del MenuBar */
+}
+
+.menu {
+    -fx-background-color: #d8ebc2;
+}
+.menu:hover {
+    -fx-background-color: #bbe944;
+}
+
+.menu:focused {
+    -fx-background-color: #bbe944;
+    -fx-text-fill: BLACK;
+}
+
+.table-view .column-header {
+    -fx-background-color: #d8ebc2;
+    -fx-text-fill: #bbe944;
+}

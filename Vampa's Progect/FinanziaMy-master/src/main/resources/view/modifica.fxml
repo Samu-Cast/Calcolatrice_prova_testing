@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5834034202410989" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.cdvd.controller.ModificaController">
+   <TableView fx:id="lista" prefHeight="628.0" prefWidth="428.0" styleClass="table-view" stylesheets="@grafica.css">
+      <columns>
+         <TableColumn fx:id="codiceTr" prefWidth="63.99996488094348" styleClass="column" text="Codice Tr." />
+         <TableColumn fx:id="importo" prefWidth="80.80005645751953" styleClass="column" text="Importo" />
+         <TableColumn fx:id="causale" prefWidth="83.20001220703125" styleClass="column" text="Causale" />
+         <TableColumn fx:id="data" prefWidth="84.00001525878906" styleClass="column" text="Data" />
+         <TableColumn fx:id="categoria" prefWidth="108.79998779296875" styleClass="column" text="Categoria" />
+      </columns>
+   </TableView>
+   <AnchorPane fx:id="anchorModifica" prefHeight="627.0" prefWidth="207.0">
+      <children>
+         <AnchorPane prefHeight="627.0" prefWidth="295.0" stylesheets="@grafica.css">
+            <children>
+
+               <Button fx:id="modifica" layoutX="51.0" layoutY="468.0" mnemonicParsing="false" onAction="#modificaTransazione" prefHeight="26.0" prefWidth="174.0" styleClass="button" stylesheets="@grafica.css" text="Inserisci" />
+               <DatePicker fx:id="nuovoData" layoutX="51.0" layoutY="402.0" prefHeight="26.0" prefWidth="174.0" styleClass="button" stylesheets="@grafica.css" />
+               <ComboBox fx:id="categoriaList" layoutX="51.0" layoutY="301.0" prefHeight="26.0" prefWidth="174.0" promptText="Categoria" styleClass="button" stylesheets="@grafica.css" />
+               <TextField fx:id="nuovoImporto" layoutX="51.0" layoutY="155.0" prefHeight="25.0" prefWidth="174.0" promptText="nuovo importo" />
+               <Label fx:id="text" layoutX="33.0" layoutY="42.0" prefHeight="59.0" prefWidth="222.0" text="MODIFICA TRANSAZIONE" textFill="#bbe944" wrapText="true">
+
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+                  <contextMenu>
+                     <ContextMenu>
+                        <items>
+                           <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                        </items>
+                     </ContextMenu>
+                  </contextMenu>
+               </Label>
+               <TextField fx:id="nuovoCausale" layoutX="51.0" layoutY="230.0" prefHeight="25.0" prefWidth="174.0" promptText="nuova causale" />
+               <Label layoutX="97.0" layoutY="122.0" text="Nuovo importo" />
+               <Label layoutX="100.0" layoutY="200.0" text="Nuova causale" />
+               <Label layoutX="107.0" layoutY="362.0" text="Nuova data" />
+               <Button fx:id="annulButton" layoutX="51.0" layoutY="521.0" mnemonicParsing="false" onAction="#handleAnnulClick" prefHeight="26.0" prefWidth="174.0" text="Annulla" />
+            </children>
+         </AnchorPane>
+      </children></AnchorPane>
+</SplitPane>

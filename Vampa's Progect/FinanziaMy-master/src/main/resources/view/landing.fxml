@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="593.0" styleClass="anchor" stylesheets="@grafica.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.cdvd.controller.LandingController">
+   <children>
+      <Label layoutX="37.0" layoutY="112.0" text="Gestisci le tue transazioni" />
+      <Label layoutX="233.0" layoutY="112.0" text="Gestisci le tue categorie" />
+      <Label layoutX="421.0" layoutY="112.0" prefHeight="18.0" prefWidth="100.0" text="Crea il tuo report" />
+      <ImageView fitHeight="40.0" fitWidth="182.0" layoutX="14.0" layoutY="9.0">
+         <image>
+            <Image url="@../img/logoAuth.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="loginInit" layoutX="442.0" layoutY="16.0" mnemonicParsing="false" onAction="#landingLoginButtonOnAction" styleClass="button" stylesheets="@grafica.css" text=" LOGIN " />
+      <Button fx:id="signupInit" layoutX="524.0" layoutY="16.0" mnemonicParsing="false" onAction="#landingSignUpButtonOnAction" styleClass="button" stylesheets="@grafica.css" text="SIGN UP" />
+      <AnchorPane layoutX="21.0" layoutY="121.0" prefHeight="134.0" prefWidth="167.0">
+         <children>
+            <ImageView fx:id="imgTransazioni" fitHeight="107.0" fitWidth="114.0" layoutX="31.0" layoutY="26.0" onMouseClicked="#handleImageClickTransazioni">
+               <image>
+                  <Image url="@../img/transazioni.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="infoTransazioni" layoutY="34.0" onMouseClicked="#handleLabelClickTransazioni" prefHeight="98.0" prefWidth="167.0" text="Inserisci, modifica e cancella le tue transazioni. Gestisci le tue spese e i tuoi guadagni creando le tue transazioni." textAlignment="CENTER" visible="false" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="212.0" layoutY="124.0" prefHeight="134.0" prefWidth="167.0">
+         <children>
+            <ImageView fx:id="imgCategorie" fitHeight="107.0" fitWidth="114.0" layoutX="31.0" layoutY="26.0" onMouseClicked="#handleImageClickCategorie">
+               <image>
+                  <Image url="@../img/categorie.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="infoCategoria" layoutX="4.0" layoutY="22.0" onMouseClicked="#handleLabelClickCategorie" prefHeight="107.0" prefWidth="167.0" text="Organizza le tue transazioni raggruppandole per categorie. Crea la tua categoria in base al tuo stile di vita." textAlignment="CENTER" visible="false" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="387.0" layoutY="124.0" prefHeight="134.0" prefWidth="167.0">
+         <children>
+            <ImageView fx:id="imgReport" fitHeight="107.0" fitWidth="114.0" layoutX="31.0" layoutY="26.0" onMouseClicked="#handleImageClickReport">
+               <image>
+                  <Image url="@../img/report.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="infoReport" layoutY="26.0" onMouseClicked="#handleLabelClickReport" prefHeight="107.0" prefWidth="167.0" text="Ottieni il report delle tue spese e dei tuoi guadagni scegliendo la categoria di tuo interesse." textAlignment="CENTER" visible="false" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
