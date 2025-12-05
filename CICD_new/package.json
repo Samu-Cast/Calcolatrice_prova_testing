@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "description": "Calcolatrice con CI/CD Testing",
     "scripts": {
-        "start": "open index.html",
-        "test": "open Calculator.test.js"
+        "test": "open Calculator.test.js",
+        "start": "open index.html"
     },
     "devDependencies": {
         "jest": "^29.7.0"
